@@ -1,4 +1,4 @@
-module github.com/gyf841010/pz-infra-new
+module github.com/yiGmMk/pz-infra-new
 
 go 1.15
 
