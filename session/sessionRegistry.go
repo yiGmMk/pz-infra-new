@@ -3,8 +3,8 @@ package session
 import (
 	"sync"
 
-	. "github.com/gyf841010/pz-infra-new/logging"
-	"github.com/gyf841010/pz-infra-new/redisUtil"
+	. "github.com/yiGmMk/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/redisUtil"
 )
 
 const (

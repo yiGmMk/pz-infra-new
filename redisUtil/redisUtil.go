@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/gyf841010/pz-infra-new/encryptUtil"
-	. "github.com/gyf841010/pz-infra-new/errorUtil"
-	. "github.com/gyf841010/pz-infra-new/logging"
-	"github.com/gyf841010/pz-infra-new/slackUtil"
+	"github.com/yiGmMk/pz-infra-new/encryptUtil"
+	. "github.com/yiGmMk/pz-infra-new/errorUtil"
+	. "github.com/yiGmMk/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/slackUtil"
 
 	"github.com/astaxie/beego"
 	"github.com/garyburd/redigo/redis"

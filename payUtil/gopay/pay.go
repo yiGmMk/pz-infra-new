@@ -3,9 +3,9 @@ package gopay
 import (
 	"errors"
 
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/client"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/common"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/constant"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/client"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/common"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/constant"
 
 	//"github.com/guidao/gopay/util"
 	"strconv"

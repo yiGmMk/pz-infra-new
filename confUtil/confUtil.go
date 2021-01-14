@@ -11,7 +11,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/gyf841010/pz-infra-new/log"
+	"github.com/yiGmMk/pz-infra-new/log"
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/config"

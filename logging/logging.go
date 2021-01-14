@@ -6,8 +6,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/gyf841010/pz-infra-new/logging/hooks/fluentd"
-	"github.com/gyf841010/pz-infra-new/logging/hooks/rolling"
+	"github.com/yiGmMk/pz-infra-new/logging/hooks/fluentd"
+	"github.com/yiGmMk/pz-infra-new/logging/hooks/rolling"
 
 	"github.com/astaxie/beego"
 	"github.com/sirupsen/logrus"

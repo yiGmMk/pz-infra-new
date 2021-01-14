@@ -3,10 +3,10 @@ package lockUtil
 import (
 	"time"
 
-	"github.com/gyf841010/pz-infra-new/log"
-	"github.com/gyf841010/pz-infra-new/redisUtil"
+	"github.com/yiGmMk/pz-infra-new/log"
+	"github.com/yiGmMk/pz-infra-new/redisUtil"
 
-	"github.com/gyf841010/pz-infra-new/redsync"
+	"github.com/yiGmMk/pz-infra-new/redsync"
 
 	"github.com/garyburd/redigo/redis"
 )

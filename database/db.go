@@ -1,8 +1,8 @@
 package database
 
 import (
-	"github.com/gyf841010/pz-infra-new/log"
-	"github.com/gyf841010/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/log"
+	"github.com/yiGmMk/pz-infra-new/logging"
 
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"

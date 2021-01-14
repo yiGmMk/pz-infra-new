@@ -4,7 +4,7 @@ import (
 	"encoding/xml"
 	"fmt"
 
-	"github.com/gyf841010/pz-infra-new/weworkapi/wxbizmsgcrypt"
+	"github.com/yiGmMk/pz-infra-new/weworkapi/wxbizmsgcrypt"
 )
 
 type MsgContent struct {

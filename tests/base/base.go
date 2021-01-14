@@ -4,10 +4,10 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/gyf841010/pz-infra-new/confUtil"
-	"github.com/gyf841010/pz-infra-new/database"
-	"github.com/gyf841010/pz-infra-new/log"
-	. "github.com/gyf841010/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/confUtil"
+	"github.com/yiGmMk/pz-infra-new/database"
+	"github.com/yiGmMk/pz-infra-new/log"
+	. "github.com/yiGmMk/pz-infra-new/logging"
 
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"

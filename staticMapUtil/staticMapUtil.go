@@ -8,8 +8,8 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/gyf841010/pz-infra-new/geoutil"
-	. "github.com/gyf841010/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/geoutil"
+	. "github.com/yiGmMk/pz-infra-new/logging"
 
 	"github.com/astaxie/beego"
 	"github.com/twpayne/go-polyline"

@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gyf841010/pz-infra-new/geoutil"
-	"github.com/gyf841010/pz-infra-new/httpUtil"
-	. "github.com/gyf841010/pz-infra-new/logging"
-	timeutil "github.com/gyf841010/pz-infra-new/timeUtil"
+	"github.com/yiGmMk/pz-infra-new/geoutil"
+	"github.com/yiGmMk/pz-infra-new/httpUtil"
+	. "github.com/yiGmMk/pz-infra-new/logging"
+	timeutil "github.com/yiGmMk/pz-infra-new/timeUtil"
 
 	"github.com/astaxie/beego"
 )

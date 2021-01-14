@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gyf841010/pz-infra-new/httpUtil"
-	. "github.com/gyf841010/pz-infra-new/logging"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/common"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/util"
+	"github.com/yiGmMk/pz-infra-new/httpUtil"
+	. "github.com/yiGmMk/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/common"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/util"
 )
 
 var defaultWechatAppClient *WechatAppClient

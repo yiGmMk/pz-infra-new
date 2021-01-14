@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gyf841010/pz-infra-new/commonUtil"
-	"github.com/gyf841010/pz-infra-new/tests/base"
+	"github.com/yiGmMk/pz-infra-new/commonUtil"
+	"github.com/yiGmMk/pz-infra-new/tests/base"
 
 	. "github.com/smartystreets/goconvey/convey"
 )

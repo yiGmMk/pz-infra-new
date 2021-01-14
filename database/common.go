@@ -3,7 +3,7 @@ package database
 import (
 	"reflect"
 
-	. "github.com/gyf841010/pz-infra-new/logging"
+	. "github.com/yiGmMk/pz-infra-new/logging"
 )
 
 func SaveModelWithChan(t interface{}, isCreate bool, ch chan error) error {

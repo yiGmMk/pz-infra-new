@@ -3,7 +3,7 @@ package fluentd
 import (
 	"fmt"
 
-	"github.com/gyf841010/pz-infra-new/logging/hooks"
+	"github.com/yiGmMk/pz-infra-new/logging/hooks"
 
 	"github.com/fluent/fluent-logger-golang/fluent"
 	"github.com/sirupsen/logrus"

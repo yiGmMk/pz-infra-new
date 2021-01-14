@@ -10,10 +10,10 @@ import (
 	"sort"
 	"strings"
 
-	. "github.com/gyf841010/pz-infra-new/logging"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/client"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/common"
-	"github.com/gyf841010/pz-infra-new/payUtil/gopay/util"
+	. "github.com/yiGmMk/pz-infra-new/logging"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/client"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/common"
+	"github.com/yiGmMk/pz-infra-new/payUtil/gopay/util"
 )
 
 func AliWebCallback(w http.ResponseWriter, r *http.Request) (*common.AliWebPayResult, error) {
