@@ -19,7 +19,6 @@ require (
 	github.com/hjr265/redsync.go v0.0.0-20160719150818-688f6d364b79
 	github.com/hsinhoyeh/binarydist v0.0.0-20140819060055-20248b8da9ec
 	github.com/hsinhoyeh/gobzip v0.0.0-20180116012146-6428c5b6c0a4 // indirect
-	github.com/jinzhu/gorm v1.9.16
 	github.com/pborman/uuid v1.2.1
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/sirupsen/logrus v1.7.0
@@ -37,4 +36,6 @@ require (
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df // indirect
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
 	gopkg.in/olivere/elastic.v5 v5.0.86
+	gorm.io/driver/mysql v1.0.3
+	gorm.io/gorm v1.20.11
 )
