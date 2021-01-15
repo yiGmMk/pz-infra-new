@@ -1,16 +1,18 @@
 package logging
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"io"
 	"os"
 	"reflect"
 
-	"github.com/sirupsen/logrus"
 	"path/filepath"
 	"runtime"
 	"strings"
+
+	"github.com/sirupsen/logrus"
 )
 
 const Logrus = "logrus"
@@ -180,6 +182,10 @@ func (log *logrusLogger) Fatal(message string, fields ...Field) {
 
 func (log *logrusLogger) Panic(message string, fields ...Field) {
 	log.Logrus.WithFields(log.addFields(fields, true)).Panicln(message)
+}
+
+func (log *logrusLogger) WithContext(ctx context.Context) *logrus.Entry {
+	return log.Logrus.WithContext(ctx)
 }
 
 func (log *logrusLogger) GetPrintLogger() PrintLogger {

@@ -1,5 +1,11 @@
 package logging
 
+import (
+	"context"
+
+	"github.com/sirupsen/logrus"
+)
+
 // Logger
 type Logger interface {
 	Debug(message string, fields ...Field)
@@ -12,6 +18,8 @@ type Logger interface {
 	Panic(message string, fields ...Field)
 	// Get Print Method Logger
 	GetPrintLogger() PrintLogger
+
+	WithContext(ctx context.Context) *logrus.Entry
 }
 
 type PrintLogger interface {
