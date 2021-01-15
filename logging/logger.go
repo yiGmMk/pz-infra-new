@@ -20,6 +20,9 @@ type Logger interface {
 	GetPrintLogger() PrintLogger
 
 	WithContext(ctx context.Context) *logrus.Entry
+
+	// 已携带堆栈信息的错误,使用fmt.Sprintf("%+v",err)得到完整的错误信息输出
+	LogErrorHasStackInfo(err error, args ...interface{})
 }
 
 type PrintLogger interface {

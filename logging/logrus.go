@@ -192,6 +192,11 @@ func (log *logrusLogger) GetPrintLogger() PrintLogger {
 	return printLogger{Logrus: log.Logrus}
 }
 
+// 已携带堆栈信息的错误,使用fmt.Sprintf("%+v",err)得到完整的错误信息输出
+func (log *logrusLogger) LogErrorHasStackInfo(err error, args ...interface{}) {
+	log.Logrus.Errorln(fmt.Sprintf("%+v", err), args)
+}
+
 type printLogger struct {
 	Logrus *logrus.Logger
 }
