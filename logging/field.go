@@ -1,8 +1,10 @@
 package logging
 
 import (
-	"github.com/sirupsen/logrus"
+	"fmt"
 	"runtime"
+
+	"github.com/sirupsen/logrus"
 )
 
 // A Field is used to add a key-value pair to a logger's context.
@@ -33,6 +35,11 @@ func WithError(err error) Field {
 		key:   logrus.ErrorKey,
 		value: err,
 	}
+}
+
+// 以%+v格式输出error,方便输出错误的详细信息
+func FormatError(err error, args ...interface{}) string {
+	return fmt.Sprintln(fmt.Sprintf("%+v", err), args)
 }
 
 // Stacktrace constructs a Field that stores a stacktrace of the current goroutine

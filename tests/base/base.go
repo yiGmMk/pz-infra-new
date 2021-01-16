@@ -11,8 +11,8 @@ import (
 
 	"github.com/astaxie/beego"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/jinzhu/gorm"
 	_ "github.com/ziutek/mymysql/native" // Native engine
+	"gorm.io/gorm"
 )
 
 var initializedConf = false
