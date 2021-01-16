@@ -32,7 +32,20 @@
         fmt.Println(p.ID)
     }
   ```
-2. logging
+- 链式方法影响
+  ```
+  db := database.GetDB()
+  driver111 := &Driver{}
+  db.First(driver111, 10000)
+  db.First(driver111, 10001)
+  // 第一条执行的sql语句会影响后面未开新Statement的sql语句执行
+  // 第二条sql如下:
+  2021/01/16 16:22:25  record not found
+    [0.470ms] [rows:0] 
+    SELECT * FROM `driver` WHERE `driver`.`id` = 10001 AND `driver`.`id` = 10000 ORDER BY `driver`.`id` LIMIT 1
+  
+  ```
+1. logging
 - 目标:日志只打一次,避免一个错误多次输出
 - 注意
    1. 通过errors.New()/WithStack()/Wrap()等处理的错误已包含堆栈信息,不要使用Log.Error()记录日志(会输出双份的堆栈信息,数据冗余)
