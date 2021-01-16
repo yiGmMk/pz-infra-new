@@ -32,7 +32,10 @@
         fmt.Println(p.ID)
     }
   ```
-- 链式方法影响
+- 链式方法影响,
+  1. 参考: https://gorm.io/zh_CN/docs/method_chaining.html
+  2. https://gorm.io/zh_CN/docs/method_chaining.html#goroutine_safe
+  3. https://gorm.io/zh_CN/docs/session.html
   ```
   db := database.GetDB()
   driver111 := &Driver{}
