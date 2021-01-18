@@ -108,8 +108,18 @@ func LogMode(level logger.LogLevel) {
 	}
 }
 
+// 通过 NewDB 选项创建一个不带之前条件的新 DB,不受上一条执行语句携带的Statement影响
+// 参考: https://gorm.io/zh_CN/docs/session.html#NewDB
 func GetDB() *gorm.DB {
-	return globalDB
+	return globalDB.Session(&gorm.Session{
+		NewDB: true,
+	})
+}
+
+// 通过指定session获取不带之前条件的新 DB,在session中可指定一些条件,
+// 参考: https://gorm.io/zh_CN/docs/session.html#NewDB
+func GetDBWithSession(session *gorm.Session) *gorm.DB {
+	return globalDB.Session(session)
 }
 
 func SetDB(db *gorm.DB) {
